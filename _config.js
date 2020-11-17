@@ -1,8 +1,8 @@
 module.exports = {
   /** Site MetaData (Required all)*/
-  title: `Title`,                           // (* Required)
-  description: `Blog Description`,          // (* Required)
-  author: `An Nak Kyun`,                         // (* Required)
+  title: `Annakky`,                           // (* Required)
+  description: `Study Blog`,          // (* Required)
+  author: `Nak Kyun An`,                         // (* Required)
   language: 'ko-KR',                        // (* Required) html lang, ex. 'en' | 'en-US' | 'ko' | 'ko-KR' | ...
   siteUrl: 'https://annakky.github.io',                      // (* Required)
     // ex.'https://junhobaik.github.io'
@@ -14,16 +14,16 @@ module.exports = {
     // If the file does not exist, it is replaced by a random image.
 
   /** Home > Bio information*/
-  comment: 'Enter your information in the "./config.js" file. ',
-  name: 'User Name',
+  comment: ' - 혼자 공부한 내용을 정리하기 위해 만든 블로그입니다. 잘못된 정보가 있으면 댓글 남겨주시면 감사하겠습니다. - ',
+  name: 'Nakkyun An',
   company: '',
   location: 'Korea',
-  email: 'annakky@naver.com',
+  email: 'rbszzang05@gmail.com',
   website: 'https://annakky.github.io',           // ex.'https://junhobaik.github.io'
   linkedin: '',                                                          // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
   facebook: '',                                                          // ex.'https://www.facebook.com/zuck' or 'https://www.facebook.com/profile.php?id=000000000000000'
   instagram: '',                                                         // ex.'https://www.instagram.com/junhobaik'
-  github: '',                                                            // ex.'https://github.com/junhobaik'
+  github: 'https://github.com/annakky',                                                            // ex.'https://github.com/junhobaik'
 
   /** Post */
   enablePostOfContents: true,     // TableOfContents activation (Type of Value: Boolean. Not String)
