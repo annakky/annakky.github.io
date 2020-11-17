@@ -2,7 +2,7 @@ module.exports = {
   /** Site MetaData (Required all)*/
   title: `Title`,                           // (* Required)
   description: `Blog Description`,          // (* Required)
-  author: `Author`,                         // (* Required)
+  author: `An Nak Kyun`,                         // (* Required)
   language: 'ko-KR',                        // (* Required) html lang, ex. 'en' | 'en-US' | 'ko' | 'ko-KR' | ...
   siteUrl: 'https://annakky.github.io',                      // (* Required)
     // ex.'https://junhobaik.github.io'
@@ -16,9 +16,9 @@ module.exports = {
   /** Home > Bio information*/
   comment: 'Enter your information in the "./config.js" file. ',
   name: 'User Name',
-  company: '',
+  company: 'SKKU',
   location: 'Korea',
-  email: '',
+  email: 'annakky@naver.com',
   website: 'https://annakky.github.io',           // ex.'https://junhobaik.github.io'
   linkedin: '',                                                          // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
   facebook: '',                                                          // ex.'https://www.facebook.com/zuck' or 'https://www.facebook.com/profile.php?id=000000000000000'
