@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Title | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://annakky.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 17 Nov 2020 02:00:04 GMT</lastBuildDate><item><title><![CDATA[Tag, 태그 게시물 예제]]></title><description><![CDATA[게시물에 태그를 지정할 수 있습니다. 해당 게시물의 Markdown YAML Front matter은 아래와 같습니다. 가이드의 Markdown YAML Front matter를 참고하세요. 자세한 가이드는 Documents를 확인해주세요.]]></description><link>https://annakky.github.io/tag-post-example/</link><guid isPermaLink="false">https://annakky.github.io/tag-post-example/</guid><pubDate>Sun, 24 Mar 1991 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;게시물에 태그를 지정할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;해당 게시물의 Markdown YAML Front matter은 아래와 같습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---
+title: Tag, 태그 게시물 예제
+date: 2019-07-30
+tags:
+  - tag
+  - 태그
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;가이드의 Markdown YAML Front matter를 참고하세요.&lt;/p&gt;
+&lt;p&gt;자세한 가이드는 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Documents&lt;/a&gt;를 확인해주세요.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Image, 이미지 게시물 예제]]></title><description><![CDATA[이미지 파일이 첨부된 게시물의 예제입니다. 폴더를 만들고 폴더의 제목이 해당 게시물의 주소가 됩니다. 게시물 파일명은 index.md 로 합니다. 이미지 파일은 폴더 내에 위치시킵니다. 자세한 가이드는 Documents를 확인해주세요.]]></description><link>https://annakky.github.io/image-post-example.md/</link><guid isPermaLink="false">https://annakky.github.io/image-post-example.md/</guid><pubDate>Sun, 24 Mar 1991 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/c0566/screenshot.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB00lEQVQ4y52SW2sUMRiG1+qN3uwhx0nmkMOeatei9G8I/igPoAi6IuKVf05hL6wj88lQaNHxzW531SKWNfDwJZnkmTchvR7aiXe3HxxX3ATLjDbMmA0WZFnGQggsxsi01uv5NHcFjvk7vW1bWPt4cWjPZKk/SiFXUv5CcL4qy3LlqmrF0VdKXeUT+Ia1z3dCIfgbrWWnpGiUlC0WtPI30lhp3WJTK4RsGeMt5FtICNExxt7vhEqJ16Gquli5L7MQmqM4bu77RGwWGN8bx2bufFNWFTAN1jeciwaiRA2+Q/huJ5R5viwWR115fFLLOCVtDAWmKI40WS6oshk5KckYVC8ozwVdJoOYf0X98YcwM2Y5mR12k/mins7vEpJQVhSUo5bOky1KMhhjHY1GnHDkJEvSvwsxsayc65xztfcBKQLF8YR8jOh7KpIsM2vJln8mNNYsy+msG/pYMyRK6SbC0hTkSpMvcAVa46iWwlhSXlwjlJwvM607JmXNcVcCSKRQfJNGbpEbrk04YuwVPnR4c59R6z05hfACwrc7YXpDeGMdPpynv+3JRdoLx4edsN/vPxwMBi9Rn6A+2wfseYr6AvXRWjYcDm9ceg/ALXDzPzjYun4C4yPqy09MVMcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;screenshot&quot;
+        title=&quot;screenshot&quot;
+        src=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/fcda8/screenshot.png&quot;
+        srcset=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/12f09/screenshot.png 148w,
+/static/483b2386e38636bd5d9e7357b4c6796b/e4a3f/screenshot.png 295w,
+/static/483b2386e38636bd5d9e7357b4c6796b/fcda8/screenshot.png 590w,
+/static/483b2386e38636bd5d9e7357b4c6796b/efc66/screenshot.png 885w,
+/static/483b2386e38636bd5d9e7357b4c6796b/c83ae/screenshot.png 1180w,
+/static/483b2386e38636bd5d9e7357b4c6796b/c0566/screenshot.png 1544w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이미지 파일이 첨부된 게시물의 예제입니다.&lt;/p&gt;
+&lt;p&gt;폴더를 만들고 폴더의 제목이 해당 게시물의 주소가 됩니다.&lt;/p&gt;
+&lt;p&gt;게시물 파일명은 index.md 로 합니다.&lt;/p&gt;
+&lt;p&gt;이미지 파일은 폴더 내에 위치시킵니다.&lt;/p&gt;
+&lt;p&gt;자세한 가이드는 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Documents&lt;/a&gt;를 확인해주세요.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Borderless Documents]]></title><description><![CDATA[블로그를 본인에 맞춰 커스터마이징하려면 우선 config.js의 수정이 필요합니다. Documents를 확인해주세요.]]></description><link>https://annakky.github.io/first-post/</link><guid isPermaLink="false">https://annakky.github.io/first-post/</guid><pubDate>Sat, 23 Mar 1991 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;블로그를 본인에 맞춰 커스터마이징하려면 우선 config.js의 수정이 필요합니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Documents&lt;/a&gt;를 확인해주세요.&lt;/p&gt;</content:encoded></item></channel></rss>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://annakky.github.io/sitemap.xml
+Host: https://annakky.github.io
