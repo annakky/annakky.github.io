@@ -19,7 +19,7 @@ module.exports = {
   company: '',
   location: 'Korea',
   email: '',
-  website: 'https://github.com/junhobaik/junhobaik.github.io',           // ex.'https://junhobaik.github.io'
+  website: 'https://annakky.github.io',           // ex.'https://junhobaik.github.io'
   linkedin: '',                                                          // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
   facebook: '',                                                          // ex.'https://www.facebook.com/zuck' or 'https://www.facebook.com/profile.php?id=000000000000000'
   instagram: '',                                                         // ex.'https://www.instagram.com/junhobaik'
