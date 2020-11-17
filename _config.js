@@ -16,7 +16,7 @@ module.exports = {
   /** Home > Bio information*/
   comment: 'Enter your information in the "./config.js" file. ',
   name: 'User Name',
-  company: 'SKKU',
+  company: '',
   location: 'Korea',
   email: 'annakky@naver.com',
   website: 'https://annakky.github.io',           // ex.'https://junhobaik.github.io'
