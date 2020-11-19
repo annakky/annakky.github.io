@@ -9,13 +9,13 @@ module.exports = {
     // ex.'https://junhobaik.github.io/' << X, Do not enter "/" at the end.
 
   /** Header */
-  profileImageFileName: '', // include filename extension ex.'profile.jpg'
+  profileImageFileName: 'ray.jpg', // include filename extension ex.'profile.jpg'
     // The Profile image file is located at path "./images/"
     // If the file does not exist, it is replaced by a random image.
 
   /** Home > Bio information*/
   comment: ' - 혼자 공부한 내용을 정리하기 위해 만든 블로그입니다. 잘못된 정보가 있으면 댓글 남겨주시면 감사하겠습니다. - ',
-  name: 'Nakkyun An',
+  name: 'Nak Kyun An',
   company: '',
   location: 'Korea',
   email: 'rbszzang05@gmail.com',
