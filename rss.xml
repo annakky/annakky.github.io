@@ -1,4 +1,196 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Annakky | Feed]]></title><description><![CDATA[Study Blog]]></description><link>https://annakky.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 20 Nov 2020 07:04:46 GMT</lastBuildDate><item><title><![CDATA[블로그 소개]]></title><description><![CDATA[소개 안녕하세요 저는 대학교에서 소프트웨어학과를 다니고 있는 학생입니다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Annakky | Feed]]></title><description><![CDATA[Study Blog]]></description><link>https://annakky.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 24 Nov 2020 04:10:50 GMT</lastBuildDate><item><title><![CDATA[파이썬 기초 1]]></title><description><![CDATA[파이썬을 다시 공부하다 알게된 점 필자는 파이썬으로 개발을 하면서 파이썬 기본서를 본 적이 없다. 다른 언어를 하면서 익힌 내용들을 바탕으로 구글링을 통해 개발을 하였다.
+그래서 이번에 파이썬 개발서를 한번 훑다가 몰랐던 기능들 혹은 정리하고 싶은 …]]></description><link>https://annakky.github.io/python_basic/</link><guid isPermaLink="false">https://annakky.github.io/python_basic/</guid><pubDate>Mon, 23 Nov 2020 11:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;파이썬을-다시-공부하다-알게된-점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%84-%EB%8B%A4%EC%8B%9C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%8B%A4-%EC%95%8C%EA%B2%8C%EB%90%9C-%EC%A0%90&quot; aria-label=&quot;파이썬을 다시 공부하다 알게된 점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;파이썬을 다시 공부하다 알게된 점&lt;/h2&gt;
+&lt;p&gt;필자는 파이썬으로 개발을 하면서 파이썬 기본서를 본 적이 없다. 다른 언어를 하면서 익힌 내용들을 바탕으로 구글링을 통해 개발을 하였다.
+그래서 이번에 파이썬 개발서를 한번 훑다가 몰랐던 기능들 혹은 정리하고 싶은 내용들을 정리하려고 한다.
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--복소수&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%B3%B5%EC%86%8C%EC%88%98&quot; aria-label=&quot;  복소수 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 복소수&lt;/h3&gt;
+&lt;p&gt;파이썬에서는 복소수를 표현할 수 있다. 여기서 주의할 점은 허수부에 &lt;em&gt;&apos;i&apos;&lt;/em&gt; 대신 &lt;em&gt;&apos;j&apos;&lt;/em&gt;를 사용한다는 것이다. 아래 예제로 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; 4i  &lt;span class=&quot;token comment&quot;&gt;# i 대신 j를 써야함&lt;/span&gt;
+
+SyntaxError&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; invalid syntax&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4j&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;real  &lt;span class=&quot;token comment&quot;&gt;# c의 실수부 출력&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3.0&lt;/span&gt;
+
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;imag  &lt;span class=&quot;token comment&quot;&gt;# c의 허수부 출력&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4.0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;복소수 관련 추가적인 함수들이 있다. 아래 예제로 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4j&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;conjugate&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# c의 켤레 복소수&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4j&lt;/span&gt;
+
+&lt;span class=&quot;token builtin&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;        &lt;span class=&quot;token comment&quot;&gt;# c의 복소평면에서의 원점까지의 거리&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--할당문&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%ED%95%A0%EB%8B%B9%EB%AC%B8&quot; aria-label=&quot;  할당문 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 할당문&lt;/h3&gt;
+&lt;p&gt;변수에 값을 할당하는 방법은 모두 잘 알고있을 것이다. 파이썬에서는 &lt;em&gt;&apos;동시 할당문&apos;&lt;/em&gt; 이라는 재밌는 기능이 있다. 아래 예제로 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;num &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;                  &lt;span class=&quot;token comment&quot;&gt;# 기본 할당문&lt;/span&gt;
+
+num1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; num2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; num3 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;# 다중 할당문&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; num2&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; num3&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;
+
+num4&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; num5 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;500&lt;/span&gt;     &lt;span class=&quot;token comment&quot;&gt;# 동시 할당문&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;num4&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; num5&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;500&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--비트-연산자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%B9%84%ED%8A%B8-%EC%97%B0%EC%82%B0%EC%9E%90&quot; aria-label=&quot;  비트 연산자 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 비트 연산자&lt;/h3&gt;
+&lt;p&gt;비트 연산자에 경우, 필자의 경험상 많이 사용하지 않는다. 직관적이지 않고 혼동의 우려가 있기 때문에 선호하지는 않지만, 굳이 비트 연산자를 사용하는 경우가 있다. 이는 비트 연산자가 가진 큰 장점 때문인데, &lt;strong&gt;&lt;em&gt;연산이 빠르다는 것&lt;/em&gt;&lt;/strong&gt;이다. 아래 표를 통해 비트 연산자를 정리해두었다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;연산자&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;의미&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&amp;#x26;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;비트 단위 AND&lt;/td&gt;
+&lt;td&gt;두 피연산자의 해당 비트가 모두 1이면 1, 아니면 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;|&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;비트 단위 OR&lt;/td&gt;
+&lt;td&gt;두 피연산자의 해당 비트가 하나라도 1이면 1, 아니면 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;^&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;비트 단위 XOR&lt;/td&gt;
+&lt;td&gt;두 피연산자의 해당 비트가 값이 같으면 1, 아니면 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;~&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;비트 단위 NOT&lt;/td&gt;
+&lt;td&gt;피연산자의 해당 비트가 0이면 1, 1이면 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&amp;#x3C;&amp;#x3C;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;비트 단위 왼쪽으로 이동&lt;/td&gt;
+&lt;td&gt;지정된 개수만큼 모든 비트를 왼쪽으로 이동&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;&gt;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;비트 단위 오른쪽으로 이동&lt;/td&gt;
+&lt;td&gt;지정된 개수만큼 모든 비트를 오른쪽으로 이동&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;파이썬에서 이진수 값을 확인하는 방법은 간단하다. &lt;em&gt;&apos;bin&apos;&lt;/em&gt; 함수를 사용하면 쉽게 이진수 형식으로 출력이 가능하다. 아래 예제로 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token builtin&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;token comment&quot;&gt;# 2진수 형식으로 출력&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0b1001&apos;&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;# 0b는 binary라는 의미&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--루프-제어변수-익명화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%A3%A8%ED%94%84-%EC%A0%9C%EC%96%B4%EB%B3%80%EC%88%98-%EC%9D%B5%EB%AA%85%ED%99%94&quot; aria-label=&quot;  루프 제어변수 익명화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 루프 제어변수 익명화&lt;/h3&gt;
+&lt;p&gt;불필요한 메모리 사용을 줄이기 위해, 혹은 한번만 사용할 것에 대해 이름을 정하는 것이 불필요하다고 생각할 수 있다. 이를 위해 &lt;strong&gt;익명화&lt;/strong&gt; 라는 기능이 있다. 아래 예제를 보며 알아가보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Hello World&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; Hello World
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; Hello World
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; Hello World
+
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; _ &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;token comment&quot;&gt;# 루프 변수의 익명화&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Hello World&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; Hello World
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; Hello World
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; Hello World&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;+&lt;/strong&gt; range
+추가적으로 range에 대해 조금 설명을 하자면, range는 세가지 변수를 가질 수 있다.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;start&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; stop&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; step&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;  &lt;strong&gt;start&lt;/strong&gt;는 시작값을 지정해주는 변수로, 생략시 0으로 할당된다.
+&lt;strong&gt;stop&lt;/strong&gt;은 반복이 끝나는 시점을 알려주는 변수로, stop 보다 작은 경우에 반복한다.
+&lt;strong&gt;step&lt;/strong&gt;은 증가값을 지정해주는 변수로, 생략시 1로 할당된다.
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;  여기서 주의할 점은, stop이 &lt;strong&gt;&lt;em&gt;&apos;미만&apos;&lt;/em&gt;&lt;/strong&gt; 이므로 0부터 10까지의 정수 출력을 원한다면, &lt;em&gt;range(0, 10, 1)&lt;/em&gt;이 아닌, &lt;strong&gt;range(0, 11, 1)&lt;/strong&gt;을 해야한다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--반복문의-break-continue&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%B0%98%EB%B3%B5%EB%AC%B8%EC%9D%98-break-continue&quot; aria-label=&quot;  반복문의 break continue permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 반복문의 break, continue&lt;/h3&gt;
+&lt;p&gt;반복문에서 특정 조건일 때, 반복을 그만하거나 건너뛰고 싶을 수 있다. 그럴때 break 혹은 continue를 사용하면 프로그램 제어를 효율적으로 할 수 있다. 아래 예시를 통해 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;st &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;start&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# 모음을 찾으면 반복문 종료&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; ch &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; st&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; ch &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;e&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;i&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;o&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;u&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ch&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; st&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;st &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;start&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# 자음만 출력&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; ch &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; st&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; ch &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;e&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;i&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;o&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;u&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;continue&lt;/span&gt;            &lt;span class=&quot;token comment&quot;&gt;# 모음이면, 아래 print 함수 건너뜀&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ch&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; strt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;break와 continue는 프로그램 제어에 효과적이지만, 너무 많이 사용하면 제어 흐름에 일관성이 없어져 프로그램 이해에 어려움을 겪을 수 있다.
+따라서 필요한 경우에만 사용하는 것을 권장한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&quot;--함수의-전역변수-참조-인자-전달&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%ED%95%A8%EC%88%98%EC%9D%98-%EC%A0%84%EC%97%AD%EB%B3%80%EC%88%98-%EC%B0%B8%EC%A1%B0-%EC%9D%B8%EC%9E%90-%EC%A0%84%EB%8B%AC&quot; aria-label=&quot;  함수의 전역변수 참조 인자 전달 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 함수의 전역변수 참조, 인자 전달&lt;/h3&gt;
+&lt;p&gt;전역변수를 자주 사용하는 것은 에러의 주 원인이 된다. 따라서 사용을 최대한 줄여야하지만, 불가피하게 사용해야할 경우가 있다. 이 때, 함수에서 전역변수의 참조 방법을 설명하려고 한다. 다음 예제로 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;print_sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;global&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b
+    a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;
+    result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;함수 내부의 sum:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;       &lt;span class=&quot;token comment&quot;&gt;# a, b는 함수 외부에서 선언된 변수를 사용함&lt;/span&gt;
+
+a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+print_sum&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;       &lt;span class=&quot;token comment&quot;&gt;# 두 전역변수를 a = 10, b = 20으로 변환&lt;/span&gt;
+result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;함수 외부의 sum:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span style=&quot;color: skyblue;&quot;&gt;실행결과&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;함수 내부의 sum: &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;
+함수 외부의 sum: &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;단, &lt;strong&gt;&lt;em&gt;&apos;global&apos;&lt;/em&gt;&lt;/strong&gt; 은 할당문에서 사용할 수 없다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;global&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;   &lt;span class=&quot;token comment&quot;&gt;# 문법오류 발생&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;또한 함수를 호출할 때, 인자를 빠뜨리더라도 에러가 발생하지 않도록 할 수 있다. 바로 &lt;strong&gt;&lt;em&gt;디폴트 인자&lt;/em&gt;&lt;/strong&gt; 를 통해 매개변수에 기본값을 할당해 줄 수 있다. 아래 예제를 통해 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;print_star&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;      &lt;span class=&quot;token comment&quot;&gt;# 매개변수는 기본값으로 1을 가짐&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; _ &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;*&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; end &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+print_star&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;      &lt;span class=&quot;token comment&quot;&gt;# 인자를 전달하지 않아, n = 1 설정됨&lt;/span&gt;
+print_star&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;     &lt;span class=&quot;token comment&quot;&gt;# 5를 인자로 전달하여, n = 1 은 수행되지 않음&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span style=&quot;color: skyblue;&quot;&gt;실행결과&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;*
+*****&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;단, 디폴트 매개변수를 할당할 때는, 전체 매개변수에 할당하거나, &lt;strong&gt;매개변수 출현 순서상 뒤에 있는 변수부터 할당&lt;/strong&gt;해야한다.
+아래 예제를 통해 구체적으로 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum_first&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;first sum:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; sum_first&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span style=&quot;color: skyblue;&quot;&gt;실행결과&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;first sum: &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;위와 달리, 첫번째 매개변수에 디폴트 값을 지정해주면 오류가 발생한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sum_second&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;       &lt;span class=&quot;token comment&quot;&gt;# 디폴트 매개변수 오류&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; b
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;second sum:&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; sum_second&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span style=&quot;color: skyblue;&quot;&gt;실행결과&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;SyntaxError: non-default argument follows default argument&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--객체의-식별값&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EA%B0%9D%EC%B2%B4%EC%9D%98-%EC%8B%9D%EB%B3%84%EA%B0%92&quot; aria-label=&quot;  객체의 식별값 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 객체의 식별값&lt;/h3&gt;
+&lt;p&gt;파이썬은 많은 내장함수를 가지고 있다. 그 중, &lt;strong&gt;&lt;em&gt;id()&lt;/em&gt;&lt;/strong&gt; 를 알아보자.&lt;br&gt;
+파이썬은 객체지향 프로그래밍 언어로, 객체마다 다른 객체와 구별되는 고유한 &lt;strong&gt;식별값&lt;/strong&gt;을 갖는다. 이를 정수형으로 반환해주는 함수가 바로 &lt;strong&gt;&lt;em&gt;id()&lt;/em&gt;&lt;/strong&gt;이다. 아래 예제로 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;str_a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;HELLO!&quot;&lt;/span&gt;
+&lt;span class=&quot;token builtin&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str_a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;21989600&lt;/span&gt;
+
+n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;token builtin&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1919929824&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[블로그 소개]]></title><description><![CDATA[소개 안녕하세요 저는 대학교에서 소프트웨어학과를 다니고 있는 학생입니다.
 제가 공부한 내용을 정리함과 동시에 다른 사람과 공유하면 좋을 것 같습니다.
 제가 아직 부족해서 게시글 중에 잘못된 정보가 포함되어 있을 수 있습니다.
 혹시 발견하시면 부담없이…]]></description><link>https://annakky.github.io/intro/</link><guid isPermaLink="false">https://annakky.github.io/intro/</guid><pubDate>Fri, 20 Nov 2020 15:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;소개&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%86%8C%EA%B0%9C&quot; aria-label=&quot;소개 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;소개&lt;/h2&gt;
