@@ -169,7 +169,7 @@ result = a + b
 print('함수 외부의 sum:', result)
 ```
 
-<span style="color: skyblue;">실행결과</span>
+<span style="color: skyblue;">실행 결과</span>
 ```shell
 함수 내부의 sum: 30
 함수 외부의 sum: 30
@@ -194,7 +194,7 @@ print_star()      # 인자를 전달하지 않아, n = 1 설정됨
 print_star(5)     # 5를 인자로 전달하여, n = 1 은 수행되지 않음
 ```
 
-<span style="color: skyblue;">실행결과</span>
+<span style="color: skyblue;">실행 결과</span>
 ```shell
 *
 *****
@@ -209,7 +209,7 @@ def sum_first(a, b = 2):
 
 print('first sum:', sum_first(1))
 ```
-<span style="color: skyblue;">실행결과</span>
+<span style="color: skyblue;">실행 결과</span>
 ```shell
 first sum: 3
 ```
@@ -224,7 +224,7 @@ def sum_second(a = 1, b):       # 디폴트 매개변수 오류
 
 print('second sum:', sum_second(2))
 ```
-<span style="color: skyblue;">실행결과</span>
+<span style="color: skyblue;">실행 결과</span>
 ```shell
 SyntaxError: non-default argument follows default argument
 ```
@@ -247,3 +247,23 @@ id(n)
 
 > 1919929824
 ```
+
+<br>
+
+### - zip() 함수
+
+파이썬에서는 반복가능 자료형으로 분류되는 자료형이 있다. 여기에는 리스트, 딕셔너리, 집합, 튜플과 같은 자료형들이 있다. 이러한 자료형을 여러개 넘겨주면, 이들을 합쳐 튜플 반복자를 반환하는 함수가 바로 zip() 함수이다. 글로만 봤을때는 이해가 잘 안될 것이다. 아래 예제로 자세히 살펴보자.
+
+```python
+str_list = ['first', 'second', 'third']
+int_tuple = (100, 200, 300, 400, 500)
+fruit_list = ['apple', 'banana', 'orange', 'grape']
+
+iterator = zip(str_list, int_tuple, fruit_list)
+list(iterator)
+
+> [('first', 100, 'apple'), ('second', 200, 'banana'), ('third', 300, 'orange')]
+```
+
+예제를 살펴보면, 같은 인덱스의 데이터끼리 묶어서 반환하는 것을 알 수 있다.
+또한 세 반복가능 데이터의 길이가 3, 5, 4로 다 다르다. 이 경우, 가장 작은 길이인 3까지의 튜플 반복자를 생성함을 알 수 있다.
