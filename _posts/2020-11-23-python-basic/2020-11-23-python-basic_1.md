@@ -266,4 +266,89 @@ list(iterator)
 ```
 
 예제를 살펴보면, 같은 인덱스의 데이터끼리 묶어서 반환하는 것을 알 수 있다.
-또한 세 반복가능 데이터의 길이가 3, 5, 4로 다 다르다. 이 경우, 가장 작은 길이인 3까지의 튜플 반복자를 생성함을 알 수 있다.
+또한 세 반복가능 데이터의 길이가 3, 5, 4로 다 다르다. 이 경우, 가장 작은 길이인 3까지의 튜플 반복자를 생성함을 알 수 있다.  
+
+<br>
+
+여기서, 더 많은 원소를 가진 리스트로 순서 쌍을 만들고 싶다면, itertools 모듈을 import해 zip_longest를 사용해야한다. zip_longest를 사용하면, 부족한 원소는 None으로 처리한다. 아래 예제를 통해 확인해보자.
+
+```python
+import itertools as it
+
+list_1 = [1, 2, 3, 4]
+list_2 = [11, 22, 33, 44, 55]
+
+for i in it.zip_longest(list_1, list_2):
+    print(i)
+```
+
+```shell
+(1, 11)
+(2, 22)
+(3, 33)
+(4, 44)
+(None, 55)
+```
+
+<br>
+
+### - chain()
+
+itertools 모듈을 언급하였으니, 모듈이 가지고 있는 함수 중 몇가지만 더 소개하겠다.  
+**chain()** 함수는 2개의 리스트를 하나로 묶어 원소를 반환하는 함수이다.
+
+```python
+import itertools as it
+
+list_1 = [1, 2, 3, 4]
+list_2 = [11, 22, 33, 44, 55]
+
+chain_list = list(it.chain(list_1, list_2))
+print(chain_list)
+```
+
+```shell
+[1, 2, 3, 4, 11, 22, 33, 44, 55]
+```
+
+실행 결과를 확인하면 list_1 원소 이후에 list_2 원소가 붙게됨을 알 수 있다.
+
+<br>
+
+### - combinations()
+
+**combinations()** 함수는 리스트 원소 중 n개를 선택해서 중복되지 않는 모든 경우의 수를 반환한다.
+
+```python
+import itertools as it
+list_1 = [1, 2, 3]
+
+combi_list = list(it.combinations(list_1, 3))
+print(combi_list)
+```
+
+```shell
+[(1, 2, 3), (1, 2, 4), (1, 3, 4), (2, 3, 4)]
+```
+
+실행 결과를 확인하면 list_1의 원소들 중 3개를 중복없이 뽑는 경우의 수를 리스트로 출력한다. 이 때, 리스트 원소의 타입은 튜플이다.
+
+<br>
+
+### - permutations()
+
+**permutations()** 함수는 리스트 원소 중 n개를 선택하여, 원소 순서에 따른 모든 경우의 수를 반환한다.
+
+```python
+import itertools as it
+list_1 = [1, 2, 3, 4]
+
+permu_list = list(it.permutations(list_1, 2))
+print(permu_list)
+```
+
+```shell
+[(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
+```
+
+*combination()* 과 *permutations()* 의 다른 점은 순서를 무시하느냐, 고려하느냐의 차이이다.
