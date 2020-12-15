@@ -1,4 +1,430 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Annakky | Feed]]></title><description><![CDATA[Study Blog]]></description><link>https://annakky.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 27 Nov 2020 08:04:51 GMT</lastBuildDate><item><title><![CDATA[파이썬 기초 2]]></title><description><![CDATA[예외처리 예외처리는 프로그램의 예상치 못한 종료나, 치명적인 오류를 예방할 수 있는 방법 중 하나이다. 따라서 꼼꼼하게 예외처리를 해 주는 것이 굉장이 중요하다고 할 수 있다. 이에 사용되는 것이 try-except-else(finally) 문이다.…]]></description><link>https://annakky.github.io/python-basic_2/</link><guid isPermaLink="false">https://annakky.github.io/python-basic_2/</guid><pubDate>Wed, 25 Nov 2020 10:25:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;예외처리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC&quot; aria-label=&quot;예외처리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;예외처리&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Annakky | Feed]]></title><description><![CDATA[Study Blog]]></description><link>https://annakky.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 15 Dec 2020 10:04:39 GMT</lastBuildDate><item><title><![CDATA[정보의 표현과 처리]]></title><description><![CDATA[정보의 저장 - 16진수 1바이트는 8비트로 이루어져 이다. 1바이트는 이진수로 표현하면 000000002 에서 111111112 까지의 범위의 값을 갖는다.
+십진수로 표현하면 010 에서 25510 의 범위를 갖는데, 이진수로 표현하기에는 너무 장…]]></description><link>https://annakky.github.io/computer-system-data/</link><guid isPermaLink="false">https://annakky.github.io/computer-system-data/</guid><pubDate>Wed, 09 Dec 2020 12:01:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;정보의-저장&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EB%B3%B4%EC%9D%98-%EC%A0%80%EC%9E%A5&quot; aria-label=&quot;정보의 저장 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정보의 저장&lt;/h2&gt;
+&lt;h3 id=&quot;--16진수&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--16%EC%A7%84%EC%88%98&quot; aria-label=&quot;  16진수 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 16진수&lt;/h3&gt;
+&lt;p&gt;1바이트는 8비트로 이루어져 이다. 1바이트는 이진수로 표현하면 00000000&lt;sub&gt;2&lt;/sub&gt; 에서 11111111&lt;sub&gt;2&lt;/sub&gt; 까지의 범위의 값을 갖는다.
+십진수로 표현하면 0&lt;sub&gt;10&lt;/sub&gt; 에서 255&lt;sub&gt;10&lt;/sub&gt; 의 범위를 갖는데, 이진수로 표현하기에는 너무 장황하고, 십진수로 표현하기에는 매번 변환을 해야한다.
+그래서 2진수로 변환이 쉽고, 표현하는데 어려움이 없는 16진수로 표현하여, 하나의 바이트 값은 00&lt;sub&gt;16&lt;/sub&gt; 에서 FF&lt;sub&gt;16&lt;/sub&gt; 까지의 범위를 갖는다.  &lt;/p&gt;
+&lt;p&gt;C언어에서는 16진수를 표현하기 위해, 앞에 &apos;0x&apos; 혹은 &apos;0X&apos;를 사용한다. 또한 문자는 소문자, 대문자 구별없이 사용 가능하다. 예를 들어, 0xF4B12D 로 나타낼 수 있다. 앞으로 16진수를 표기하는데 있어 C언어의 표기법을 사용하겠다.  &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;진수&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;right&quot;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Binary&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;0001&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;0111&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;0011&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1010&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;0100&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Hexadecimal&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;7&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;3&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;A&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;4&lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;위 예제처럼, 이진수가 주어지면, 4비트씩 나누어 16진수로 변환하면 된다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--주소지정과-바이트-순서&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EC%A3%BC%EC%86%8C%EC%A7%80%EC%A0%95%EA%B3%BC-%EB%B0%94%EC%9D%B4%ED%8A%B8-%EC%88%9C%EC%84%9C&quot; aria-label=&quot;  주소지정과 바이트 순서 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 주소지정과 바이트 순서&lt;/h3&gt;
+&lt;p&gt;대부분의 컴퓨터에서 멀티 바이트 객체는 연속된 바이트에 저장되며, 객체의 주소는 사용된 바이트의 최소 주소로 정한다.
+예를 들어, int 타입의 변수 x가 주소 0x100라 하자. x는 4바이트의 공간을 가지므로, x는 메모리 주소 0x100, 0x101, 0x102, 0x103에 저장될 것이다.  &lt;/p&gt;
+&lt;p&gt;여기서 x를 나타내는 비트를 [&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 2&lt;/em&gt;&lt;/sub&gt;, ... , &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt;] 으로 &lt;em&gt;w&lt;/em&gt;-비트 정수를 갖는다고 하자. 여기서 &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;은 가장 중요한 비트 (most significant bit)이고, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;0&lt;/sub&gt;은 가장 덜 중요한 비트이다. 예를 들면, 0x4F12AF 에서, 4는 가장 중요한 비트이고, F는 가장 덜 중요한 비트이다.  &lt;/p&gt;
+&lt;p&gt;컴퓨터 타입에 따라 객체를 메모리에 저장하는 순서가 달라지는데, 어떤 컴퓨터는 가장 중요한 바이트부터 저장하고, 어떤 컴퓨터는 가장 덜 중요한 바이트부터 저장한다. 전자를 &lt;strong&gt;&lt;em&gt;빅 엔디안&lt;/em&gt;&lt;/strong&gt;이라 하고, 후자를 &lt;strong&gt;&lt;em&gt;리틀 엔디안&lt;/em&gt;&lt;/strong&gt;이라 부른다.  &lt;/p&gt;
+&lt;p&gt;int형 변수 x가 주소 0x100에 있으며, 16진수 값 0x01234567을 갖는다고 하자.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Big endian&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;주소&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center&gt;0x100&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center&gt;0x101&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center&gt;0x102&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center&gt;0x103&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;값&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center style=&quot;border-left: 1px solid lightgray; border-right: 1px solid lightgray&quot;&gt;01&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center style=&quot;border-left: 1px solid lightgray; border-right: 1px solid lightgray&quot;&gt;23&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center style=&quot;border-left: 1px solid lightgray; border-right: 1px solid lightgray&quot;&gt;45&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center style=&quot;border-left: 1px solid lightgray; border-right: 1px solid lightgray&quot;&gt;67&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Little endian&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;주소&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center&gt;0x100&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center&gt;0x101&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center&gt;0x102&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center&gt;0x103&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;값&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center style=&quot;border-left: 1px solid lightgray; border-right: 1px solid lightgray&quot;&gt;67&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center style=&quot;border-left: 1px solid lightgray; border-right: 1px solid lightgray&quot;&gt;45&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center style=&quot;border-left: 1px solid lightgray; border-right: 1px solid lightgray&quot;&gt;23&lt;/center&gt;&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;&lt;center style=&quot;border-left: 1px solid lightgray; border-right: 1px solid lightgray&quot;&gt;01&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;대부분의 프로그래머는 자신의 컴퓨터에서 사용되는 바이트 순서를 알 수 없기 때문에, 바이트 순서가 큰 문제가 되지 않는다. 그러나 바이트 순서가 이슈가 되기도 하는데, 이는 다른 컴퓨터로 이진 데이터를 전송할 때이다. 그러나 네트워크 표준을 통해 이러한 문제들을 해결하고 있다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--쉬프트-연산&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EC%89%AC%ED%94%84%ED%8A%B8-%EC%97%B0%EC%82%B0&quot; aria-label=&quot;  쉬프트 연산 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 쉬프트 연산&lt;/h3&gt;
+&lt;p&gt;C언어에서는 비트 패턴을 좌우로 이동시키는 &lt;em&gt;쉬프트&lt;/em&gt;연산을 제공한다. 먼저, 좌측 쉬프트에 대해 알아보자.  &lt;/p&gt;
+&lt;p&gt;좌측 쉬프트는 &lt;strong&gt;x &amp;#x3C;&amp;#x3C; k&lt;/strong&gt;로 표현하며, 비트 표시 [&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 2&lt;/em&gt;&lt;/sub&gt;, ... , &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt;]를 [&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - k - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - k - 2&lt;/em&gt;&lt;/sub&gt;, ... , &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt;, 0, ... , 0]으로 만든다. 즉 좌측은 k비트만큼 밀려 삭제되며, 우측에는 k개의 0으로 채워진다.  &lt;/p&gt;
+&lt;p&gt;우측 쉬프트는 좌측과 다르게 두 종류의 쉬프트를 제공한다.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;논리 우측 쉬프트 : 좌측에 k개의 0으로 채워 [0, ... , 0, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 2&lt;/em&gt;&lt;/sub&gt;, ..., &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt;]를 만든다.  &lt;br&gt;&lt;br&gt;
+산술 우측 쉬프트 : 좌측에 k개를 가장 중요한 비트와 동일하게 채워 [&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;, ... , &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 2&lt;/em&gt;&lt;/sub&gt;, ... , &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k&lt;/em&gt;&lt;/sub&gt;]로 만든다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;C언어에서는 어떤 타입의 우측 쉬프트가 사용되어야 하는지 명확하게 정의하고 있지 않지만, 일반적으로 부호형 데이터에서는 산술 쉬프트를, 비부호형 데이터에서는 논리 쉬프트를 사용한다.  &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;쉬프트 타입&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Value 1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Value 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;x&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;[00110011]&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;[11001100]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;x &amp;#x3C;&amp;#x3C; 4&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;[0011&lt;strong&gt;&lt;em&gt;0000&lt;/em&gt;&lt;/strong&gt;]&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;[1100&lt;strong&gt;&lt;em&gt;0000&lt;/em&gt;&lt;/strong&gt;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;x &gt;&gt; 4 (logical)&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;[&lt;strong&gt;&lt;em&gt;0000&lt;/em&gt;&lt;/strong&gt;0011]&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;[&lt;strong&gt;&lt;em&gt;0000&lt;/em&gt;&lt;/strong&gt;1100]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;x &gt;&gt; 4 (arithmetic)&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;[&lt;strong&gt;&lt;em&gt;0000&lt;/em&gt;&lt;/strong&gt;0011]&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;[&lt;strong&gt;&lt;em&gt;1111&lt;/em&gt;&lt;/strong&gt;1100]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;h2 id=&quot;정수의-표시&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EC%88%98%EC%9D%98-%ED%91%9C%EC%8B%9C&quot; aria-label=&quot;정수의 표시 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정수의 표시&lt;/h2&gt;
+&lt;p&gt;컴퓨터는 0, 1만을 사용하여 모든 수를 표현해야 한다. 그렇다면 어떻게 정수를 2진수를 사용하여 표현할 수 있을까. 음수를 0, 1만으로 어떻게 표현할 수 있을까. 에 대한 의문이 생기기 마련이다. 컴퓨터가 정수를 표현하는 방법을 소개하겠다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--비부호형&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%B9%84%EB%B6%80%ED%98%B8%ED%98%95&quot; aria-label=&quot;  비부호형 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 비부호형&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;w&lt;/em&gt;비트의 정수형 데이터 타입이 있다고 하자. 이 정수는 [&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 2&lt;/em&gt;&lt;/sub&gt;, ..., &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt;]으로 표현된다. 비부호형은 unsigned로, 무조건 양수 혹은 0의 값만을 갖는다. 따라서 이 정수는 0 ~ 2&lt;sup&gt;&lt;em&gt;w&lt;/em&gt;&lt;/sup&gt; - 1 까지의 값을 갖는다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;7  -&amp;gt; [0111]  
+14 -&amp;gt; [1110]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--2의-보수&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--2%EC%9D%98-%EB%B3%B4%EC%88%98&quot; aria-label=&quot;  2의 보수 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 2의 보수&lt;/h3&gt;
+&lt;p&gt;부호형 데이터를 알아보기 전에 먼저 알아야 할 것이 있다. 바로 2의 보수이다. 부호형 숫자를 컴퓨터에서 표시하는 가장 일반적인 방법이 &lt;strong&gt;2의 보수&lt;/strong&gt;로 많이 알려져 있다. 2의 보수는 가장 높은 자리에서 자리 올림 발생 시 무시하므로 1의 보수보다 계산이 간단하다. 이러한 특성때문에 2의 보수를 사용한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2의 보수란 어떤 수를 커다란 2의 제곱수에서 빼서 얻은 이진수이다. &lt;sub&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/2%EC%9D%98_%EB%B3%B4%EC%88%98&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;[나무위키]&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2의 보수를 쉽게 구하는 방법은, 모든 자리 수를 반전(0은 1로, 1은 0으로)한 뒤, 1을 더하면 된다. 아래 예를 통해 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;7  -&amp;gt; [0111]
+-7 -&amp;gt; [1001]
+
+5  -&amp;gt; [0101]
+-3 -&amp;gt; [1101]
+5 - 3 = [10010] -&amp;gt; [0010] = 2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--부호형&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%B6%80%ED%98%B8%ED%98%95&quot; aria-label=&quot;  부호형 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 부호형&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;w&lt;/em&gt;비트의 정수형 데이터 타입이 있다고 하자. 이 정수는 [&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 2&lt;/em&gt;&lt;/sub&gt;, ..., &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt;]으로 표현된다. 부호형 정수는 signed로 음의 값을 가질 수 있다. 따라서 이 정수는 -2&lt;sup&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sup&gt; ~ 2&lt;sup&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sup&gt; - 1 까지의 값을 갖는다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;7  -&amp;gt; [0111]  
+-2 -&amp;gt; [1110]
+7 + 7 -&amp;gt; [1110] = -2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 예제처럼, 부호형에서는 두 수를 더했을 때 값이 완전히 달라질 수 있음에 유의하여야한다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--비부호형과-부호형간의-변환&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%B9%84%EB%B6%80%ED%98%B8%ED%98%95%EA%B3%BC-%EB%B6%80%ED%98%B8%ED%98%95%EA%B0%84%EC%9D%98-%EB%B3%80%ED%99%98&quot; aria-label=&quot;  비부호형과 부호형간의 변환 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 비부호형과 부호형간의 변환&lt;/h3&gt;
+&lt;p&gt;C는 비부호형과 부호형 간의 변환을 허용한다. 대부분의 시스템은 기본 비트 표시는 바뀌지 않는다는 규칙을 따른다. 따라서 변환시 값이 달라질 수 있음에 유의하여야한다. 아래 예시를 통해 확인해보자.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;비트표현&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;비부호형&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;부호형&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;[0101]&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;[1101]&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;13&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;-3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--비트-확장&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%B9%84%ED%8A%B8-%ED%99%95%EC%9E%A5&quot; aria-label=&quot;  비트 확장 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 비트 확장&lt;/h3&gt;
+&lt;p&gt;값은 동일하게 유지한 채, 더 큰 길이의 자료형으로 변환하는 것은 언제나 가능해야한다. 비트 확장은 산술 우측 쉬프트와 비슷하다. 아래 예제는 빅 엔디안 머신에서 32비트 프로그램으로 실행한 결과이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;short sx = -12345          : cf c7
+int x = sx                 : ff ff cf c7
+
+unsigned short usx = 53191 : cf c7
+unsigned int ux = usx      : 00 00 cf c7&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 예제처럼, 비부호형 정수의 경우 확장된 크기만큼 0을 왼쪽에 채운다. 부호형 정수의 경우는 확장된 크기만큼 가장 중요한 비트와 같은 값을 왼쪽에 채운다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--숫자의-절삭&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EC%88%AB%EC%9E%90%EC%9D%98-%EC%A0%88%EC%82%AD&quot; aria-label=&quot;  숫자의 절삭 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 숫자의 절삭&lt;/h3&gt;
+&lt;p&gt;이번에는 작은 길이의 자료형으로 변환하여, 비트의 개수를 줄이는 경우를 살펴보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre class=&quot;language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;53191&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;short&lt;/span&gt; sx &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;short&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;             &lt;span class=&quot;token comment&quot;&gt;// -12345&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;153191&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;short&lt;/span&gt; sa &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;short&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;token comment&quot;&gt;// 22119&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;정수 x는 비트 [&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;w - 2&lt;/em&gt;&lt;/sub&gt;, ..., &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt;]을 갖는다고 하자. 이 때 k개의 비트를 갖도록 절삭한 결과를 x&apos;이라하면, x&apos;은 [&lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k - 1&lt;/em&gt;&lt;/sub&gt;, &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k - 2&lt;/em&gt;&lt;/sub&gt;, ..., &lt;em&gt;x&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt;]을 갖게 된다. k의 자리수를 갖도록 왼쪽의 값을 모두 제거한다고 생각하면 쉽다.  &lt;/p&gt;
+&lt;p&gt;비부호형에서, x&apos; = x mod 2&lt;sup&gt;k&lt;/sup&gt;, 즉 x&apos;은 x를 2의 k제곱으로 나눈 값과 같다. 부호형에서는 절삭 후 가장 중요한 비트를 부호비트로 바꾼다.  &lt;/p&gt;
+&lt;p&gt;위 예제와 같이, 숫자의 절삭에서 오버플로우가 일어나 값이 바뀔 수 있다는 것에 유의하여야한다.  &lt;/p&gt;
+&lt;p&gt;곱셈과 나눗셈, 특히 나눗셈은 덧셈과 비트 연산보다 훨씬 많은 시간을 필요로 한다. 따라서 &lt;strong&gt;&lt;em&gt;&apos;x * 15&apos;&lt;/em&gt;&lt;/strong&gt; 을 하는 것보다 &lt;strong&gt;&lt;em&gt;&apos;(x &amp;#x3C;&amp;#x3C; 4) - x&apos;&lt;/em&gt;&lt;/strong&gt; 를 하는 것이 프로그램의 성능을 높일 수 있다. 다만 주의할 점은, 정수 연산시 오버플로우를 항상 고려하여 코드를 작성해야한다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&quot;부동소수점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90&quot; aria-label=&quot;부동소수점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;부동소수점&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;부동소수점이란, 실수를 컴퓨터상에서 근사하여 표현할 때 소수점의 위치를 고정하지 않고 그 위치를 나타내는 수를 따로 적는 것이다. &lt;sub&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&amp;#x3C;위키백과&gt;&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;p&gt;정의를 보면 와닫지 않을 수 있다. 쉽게 설명하면 컴퓨터 상에서 실수를 표현하기 어려우니, 실수를 하나의 틀에 넣고 그 틀을 이진수로 표현하면 컴퓨터도 실수를 표현할 수 있다고 생각해서 사용한 것이 부동소수점이다. 그래도 이해하기 어려울 수 있다. 이해를 돕기 위해, 널리 쓰이는 표준인 IEEE 부동소수점을 가지고 설명하겠다.  &lt;/p&gt;
+&lt;p&gt;IEEE 부동소수점 표준은 V = (-1)&lt;sup&gt;&lt;em&gt;s&lt;/em&gt;&lt;/sup&gt; X &lt;em&gt;M&lt;/em&gt; X 2&lt;sup&gt;&lt;em&gt;E&lt;/em&gt;&lt;/sup&gt; 형태로 나타낸다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;부호 &lt;strong&gt;&lt;em&gt;s&lt;/em&gt;&lt;/strong&gt; 는 실수가 음수인지(s = 1) 양수인지(s = 0) 결정한다.&lt;/li&gt;
+&lt;li&gt;유효숫자 &lt;strong&gt;&lt;em&gt;M&lt;/em&gt;&lt;/strong&gt; 은 비율 이진수로 1과 2 - &lt;em&gt;ε&lt;/em&gt; 사이 또는 0과 1 - &lt;em&gt;ε&lt;/em&gt; 사이의 값을 갖는다.&lt;/li&gt;
+&lt;li&gt;지수 &lt;strong&gt;&lt;em&gt;E&lt;/em&gt;&lt;/strong&gt; 는 2의 제곱으로 자리값을 제공한다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; 부동소수점 수의 비트 표시는 이 값을 인코딩하기 위해 세 개의 필드로 나눠진다.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;한 개의 부호 비트 &lt;strong&gt;&lt;em&gt;s&lt;/em&gt;&lt;/strong&gt; 는 부호 &lt;em&gt;s&lt;/em&gt;를 직접 인코딩한다.&lt;/li&gt;
+&lt;li&gt;k비트 지수 필드 &lt;strong&gt;&lt;em&gt;exp&lt;/em&gt;&lt;/strong&gt; = &lt;em&gt;e&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k - 1&lt;/em&gt;&lt;/sub&gt;...&lt;em&gt;e&lt;/em&gt;&lt;sub&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;e&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt;는 지수 &lt;em&gt;E&lt;/em&gt;를 인코딩한다.&lt;/li&gt;
+&lt;li&gt;n비트 비율 필드 &lt;strong&gt;&lt;em&gt;frac&lt;/em&gt;&lt;/strong&gt; = &lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;n - 1&lt;/em&gt;&lt;/sub&gt;...&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sub&gt;&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt;는 유효숫자 &lt;em&gt;M&lt;/em&gt;을 인코딩한다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;32비트 시스템에서는 s = 1, k = 8, n = 23비트를 가지며, double형의 64비트를 갖는 자료형에서는 s = 1, k = 11, n = 52비트를 갖는다.&lt;/p&gt;
+&lt;p&gt;쉽게 설명하면, 한 실수를 IEEE 부동소수점 표준에 맞게 변환한 다음, 각 필드에 맞게 인코딩하면 된다는 뜻이다.  &lt;/p&gt;
+&lt;p&gt;부동소수점으로 나타낼 수 있는 값을 크게 세 분류로 나눌 수 있다. 그 중 가장 일반적인 경우를 &lt;strong&gt;&lt;em&gt;정규화 값&lt;/em&gt;&lt;/strong&gt;이라고 한다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--정규화-값&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EC%A0%95%EA%B7%9C%ED%99%94-%EA%B0%92&quot; aria-label=&quot;  정규화 값 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 정규화 값&lt;/h3&gt;
+&lt;p&gt;정규화 값은 가장 일반적인 경우로, exp 비트 패턴이 모두 0이 아니며, 모두 1이 아닌 경우이다. 여기서 &lt;strong&gt;지수부 필드&lt;/strong&gt;는 부호형 정수로 만들기 위해 &lt;strong&gt;&lt;em&gt;Bias&lt;/em&gt;&lt;/strong&gt; 를 사용하였다. Bias는 &lt;em&gt;Bias&lt;/em&gt; = 2&lt;sup&gt;&lt;em&gt;k - 1&lt;/em&gt;&lt;/sup&gt; - 1 이며, 지수부의 음수 표현을 위해 사용된다.(단일정밀도에서 127, 이중정밀도에서 1023) 즉 지수부를 비부호형으로 계산한 다음, Bias를 빼주면 원하는 지수값을 얻을 수 있다는 것이다.&lt;/p&gt;
+&lt;p&gt;따라서 지수 값은 &lt;em&gt;E&lt;/em&gt; = &lt;em&gt;e&lt;/em&gt; - &lt;em&gt;Bias&lt;/em&gt;이며, e는 비트 패턴 &lt;em&gt;e&lt;/em&gt;&lt;sub&gt;&lt;em&gt;k - 1&lt;/sub&gt; ... *e&lt;/em&gt;&lt;sub&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sub&gt; &lt;em&gt;e&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt; 을 가진다.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;비율&lt;/strong&gt;필드 frac은 이진수 표시로 0.&lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;n - 1&lt;/em&gt;&lt;/sub&gt; ... &lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sub&gt; &lt;em&gt;f&lt;/em&gt;&lt;sub&gt;&lt;em&gt;0&lt;/em&gt;&lt;/sub&gt; 를 가지는 것으로 해석된다. &lt;strong&gt;유효숫자&lt;/strong&gt; M = 1 + &lt;em&gt;f&lt;/em&gt; 로 frac에 암시적으로 정수부분에 1이 있다고 본다. 이는 E를 조정해서 유효숫자 M이 항상 1 ≤ M &amp;#x3C; 2 범위를 갖도록 할 수 있기 때문에, 비트 한개를 무료로 얻어 정밀도를 높히기 위함이다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--비정규화-값&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%B9%84%EC%A0%95%EA%B7%9C%ED%99%94-%EA%B0%92&quot; aria-label=&quot;  비정규화 값 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 비정규화 값&lt;/h3&gt;
+&lt;p&gt;비정규화 값은 지수 필드가 모두 0일때를 말한다. 이 경우 &lt;strong&gt;&lt;em&gt;지수 값&lt;/em&gt;&lt;/strong&gt;은 &lt;em&gt;E&lt;/em&gt; = 1 - &lt;em&gt;Bias&lt;/em&gt; 이다. &lt;strong&gt;&lt;em&gt;유효숫자&lt;/em&gt;&lt;/strong&gt; M = &lt;em&gt;f&lt;/em&gt; 로, 암시적으로 정수부분에 1이 아닌, 0이 있는 것이다.  &lt;/p&gt;
+&lt;p&gt;여기서 눈치가 빠른 사람들은 궁금할 것이다. 왜 지수 값이 -&lt;em&gt;Bias&lt;/em&gt;가 아닌 1 - &lt;em&gt;Bias&lt;/em&gt;를 사용했을까? 왜 유효숫자 정수 부분은 0인가?  &lt;/p&gt;
+&lt;p&gt;먼저 간단한 유효숫자에 대해 설명해주겠다. 기존 정규화 값으로는 0을 표현할 수가 없다. 따라서 0을 표현하기 위해 지수 필드가 모드 0인 매우 작은수의 경우 정수 부분을 0으로 설정하여 0을 표현할 수 있도록 하였다. 또한 비정규화 숫자들의 기능은 0.0에 매우 가까운 값들을 나타내기 위함이기 때문에 정수 부분을 0으로 설정한 것이다.  &lt;/p&gt;
+&lt;p&gt;그렇다면 지수 값은 왜 1 - &lt;em&gt;Bias&lt;/em&gt;인가? 이는 비정규화 값에서 정규화 값으로 전환함에 있어 편리하기 때문이다. 아래 예시로 확인해보자.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;0 00000000 000000000000000000001&lt;/code&gt; = 0.000000000000000000001 * 2&lt;sup&gt;-126&lt;/sup&gt;&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;0 00000000 111111111111111111111&lt;/code&gt; = 0.111111111111111111111 * 2&lt;sup&gt;-126&lt;/sup&gt;
+&lt;code class=&quot;language-text&quot;&gt;0 00000001 000000000000000000000&lt;/code&gt; = 1.000000000000000000000 * 2&lt;sup&gt;-126&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;위 2개 수는 비정규화 값이고, 맨 아래는 정규화 값이다. &lt;strong&gt;비트 수준에서&lt;/strong&gt;, 위 2개 값을 더했을 때, 맨 아래 값이 나오면 비트 연산에도 추가적인 계산 없이 비트 덧셈만 진행하면 된다. 이는 매우 편리하기 때문에 이에 맞게 실제 값도 조정하고 싶을 것이다. 따라서 지수 값을 1 - &lt;em&gt;Bias&lt;/em&gt;로 조정함으로써, 비정규화 값과 정규화 값 전환이 편리하도록 만든 것이다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--특수-값&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%ED%8A%B9%EC%88%98-%EA%B0%92&quot; aria-label=&quot;  특수 값 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 특수 값&lt;/h3&gt;
+&lt;p&gt;부동소수점의 마지막 범주는 지수 필드가 모두 1인 경우이다. 지수 필드가 모두 1이고, 비율 필드가 모두 0이면 결과값은 무한대를 나타낸다. 즉 &lt;em&gt;s&lt;/em&gt; = 0 이면 +∞ , &lt;em&gt;s&lt;/em&gt; = 1 이면 -∞ 를 의미한다. 또한 비율 필드가 모두 0이 아니면, 결과값은 &lt;em&gt;NaN&lt;/em&gt; 으로, &quot;not a number&quot;를 의미한다. 이런 값들은
+∞ - ∞ 혹은 (-1)&lt;sup&gt;0.5&lt;/sup&gt; 같은 연산의 결과로 반환된다. 이들은 초기화되지 않은 데이터를 표시할 때와 같이 일부 응용에서 유용할 수 있다.&lt;/p&gt;
+&lt;p&gt;아래 예제를 통해 부동소수점에 대해 정리해보자. 지수비트 &lt;em&gt;k&lt;/em&gt; = 4, 비율비트 &lt;em&gt;n&lt;/em&gt; = 3, &lt;em&gt;Bias&lt;/em&gt; = 2&lt;sup&gt;4 - 1&lt;/sup&gt; - 1 = 7 을 갖는 8비트 부동소수점 형식으로 나타낼 수 있는 수를 표로 정리하였다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;th&gt;비트 표현&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;E&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;&lt;em&gt;M&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;2&lt;sup&gt;&lt;em&gt;E&lt;/em&gt;&lt;/sup&gt;X&lt;em&gt;M&lt;/em&gt;&lt;/th&gt;
+&lt;th&gt;십진수&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0 0000 000&lt;/td&gt;
+&lt;td&gt;-6&lt;/td&gt;
+&lt;td&gt;0/8&lt;/td&gt;
+&lt;td&gt;0/512&lt;/td&gt;
+&lt;td&gt;0.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;가장 작은 양수&lt;/td&gt;
+&lt;td&gt;0 0000 001&lt;/td&gt;
+&lt;td&gt;-6&lt;/td&gt;
+&lt;td&gt;1/8&lt;/td&gt;
+&lt;td&gt;1/512&lt;/td&gt;
+&lt;td&gt;0.001953&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0 0000 010&lt;/td&gt;
+&lt;td&gt;-6&lt;/td&gt;
+&lt;td&gt;2/8&lt;/td&gt;
+&lt;td&gt;2/512&lt;/td&gt;
+&lt;td&gt;0.003906&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;. . .&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;가장 큰 비정규화&lt;/td&gt;
+&lt;td&gt;0 0000 111&lt;/td&gt;
+&lt;td&gt;-6&lt;/td&gt;
+&lt;td&gt;7/8&lt;/td&gt;
+&lt;td&gt;7/512&lt;/td&gt;
+&lt;td&gt;0.013672&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;가장 작은 정규화&lt;/td&gt;
+&lt;td&gt;0 0001 000&lt;/td&gt;
+&lt;td&gt;-6&lt;/td&gt;
+&lt;td&gt;8/8&lt;/td&gt;
+&lt;td&gt;8/512&lt;/td&gt;
+&lt;td&gt;0.015625&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0 0001 001&lt;/td&gt;
+&lt;td&gt;-6&lt;/td&gt;
+&lt;td&gt;9/8&lt;/td&gt;
+&lt;td&gt;9/512&lt;/td&gt;
+&lt;td&gt;0.017578&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;. . .&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0 0110 111&lt;/td&gt;
+&lt;td&gt;-1&lt;/td&gt;
+&lt;td&gt;15/8&lt;/td&gt;
+&lt;td&gt;15/16&lt;/td&gt;
+&lt;td&gt;0.9375&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0 0111 000&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;8/8&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0 0111 001&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;9/8&lt;/td&gt;
+&lt;td&gt;9/8&lt;/td&gt;
+&lt;td&gt;1.125&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;. . .&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;가장 큰 정규화&lt;/td&gt;
+&lt;td&gt;0 1110 111&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;15/8&lt;/td&gt;
+&lt;td&gt;1920/8&lt;/td&gt;
+&lt;td&gt;240.0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;무한대&lt;/td&gt;
+&lt;td&gt;0 1111 000&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;∞&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;NaN&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;0 1111 001&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;정규화 값, 비정규화 값의 &lt;em&gt;Bias&lt;/em&gt; 를 고려하며 값을 확인하다보면 어느새 부동소수점에 익숙해져 있을 것이다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;부동소수점은 제한된 범위와 정밀도를 갖기 때문에, 실제 값의 근사값으로 연산을 진행한다. 따라서 오차가 생길 수 있음을 항상 유의하여야한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;--비트-확장--축소&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%B9%84%ED%8A%B8-%ED%99%95%EC%9E%A5--%EC%B6%95%EC%86%8C&quot; aria-label=&quot;  비트 확장  축소 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 비트 확장 / 축소&lt;/h3&gt;
+&lt;p&gt;float, double은 마찬가지로 확장되거나 축소될 수 있다. int, float, double 간의 타입 캐스팅이 일어났을 때, 어떤 변화가 일어나는지 확인해보자.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;int에서 float로, 숫자는 오버플로우할 수 없지만, 근사될 수 있다.&lt;/li&gt;
+&lt;li&gt;int나 float에서 double로, 정확한 수치는 보존될 수 있다.(더 넓은 범위의 비트를 갖기 때문에 표현 가능한 값의 범위가 늘어나 정밀도가 더 크기 때문)&lt;/li&gt;
+&lt;li&gt;double에서 float로, 범위가 더 작아지기 때문에 오버플로우하여 +∞ 혹은 -∞ 가 될 수 있다. 그 이외의 경우 정밀도가 더 작아져 근사될 수 있다.&lt;/li&gt;
+&lt;li&gt;float나 double에서 int로, 값은 0 방향으로 근사될 것이다.(소수점 이하 버림)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;p&gt;이번 포스트에서는 정수와 실수의 표현 방법을 알아보았다. C에서 예상치 못한 결과나 버그를 마주칠때가 있는데, 위 내용을 잘 이해하면 그런 문제들을 해결하는데 도움이 될 것이다. 다음 포스트에서는 프로그램의 기계 수준의 표현에 대해 설명하겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[파이썬 기초 2]]></title><description><![CDATA[예외처리 예외처리는 프로그램의 예상치 못한 종료나, 치명적인 오류를 예방할 수 있는 방법 중 하나이다. 따라서 꼼꼼하게 예외처리를 해 주는 것이 굉장이 중요하다고 할 수 있다. 이에 사용되는 것이 try-except-else(finally) 문이다.…]]></description><link>https://annakky.github.io/python-basic_2/</link><guid isPermaLink="false">https://annakky.github.io/python-basic_2/</guid><pubDate>Wed, 25 Nov 2020 10:25:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;예외처리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC&quot; aria-label=&quot;예외처리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;예외처리&lt;/h2&gt;
 &lt;p&gt;예외처리는 프로그램의 예상치 못한 종료나, 치명적인 오류를 예방할 수 있는 방법 중 하나이다. 따라서 꼼꼼하게 예외처리를 해 주는 것이 굉장이 중요하다고 할 수 있다. 이에 사용되는 것이 &lt;strong&gt;try-except-else(finally)&lt;/strong&gt; 문이다.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -91,23 +517,80 @@ minsoo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Person&lt;spa
 &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;minsoo&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;Person&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; MinSoo, age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;br&gt;
+&lt;h3 id=&quot;--문서화-메소드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EB%AC%B8%EC%84%9C%ED%99%94-%EB%A9%94%EC%86%8C%EB%93%9C&quot; aria-label=&quot;  문서화 메소드 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 문서화 메소드&lt;/h3&gt;
+&lt;p&gt;파이썬에서 함수의 사용법과 같은, 함수에 대한 정보를 얻기 위해 help 함수를 종종 사용한다.
+이는 기존 내장 클래스, 함수에만 적용되는 것이 아닌, 사용자가 생성한 클래스에서도 가능하다.  &lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;파이썬은 모듈, 함수, 클래스를 정의할 때, 기능에 관한 설명을 문자열로 작성하면 이를 &lt;strong&gt;__doc__&lt;/strong&gt; 속성에 자동으로 할당한다.
+이를 잘 활용하면, 협업에 큰 도움이 될 것이다. 아래 예시를 통해 문서화된 정보를 조회하는 방법을 살펴보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;
+    학생 정보를 저장하기 위한 클래스
+    name : 학생 이름
+    printName() : 학생 이름 출력 함수
+    &quot;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name
+
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&quot;학생 이름을 출력하는 함수&quot;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;token builtin&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Student&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;class Student&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;builtins.object&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  Student&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  학생 정보를 저장하기 위한 클래스
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  name &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; 학생 이름
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  printName&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; 학생 이름 출력 함수
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  Methods defined here:
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  __init__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self, name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;      Initialize self.  See help&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;type&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; accurate signature.
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  printName&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;      학생 이름을 출력하는 함수
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  ----------------------------------------------------------------------
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  Data descriptors defined here:
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  __dict__
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;      dictionary &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; instance variables &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;if defined&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;  __weakref__
+ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;      list of weak references to the object &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;if defined&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;클래스 뿐만 아니라, 클래스 내부 함수도 help를 사용할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token builtin&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Student&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;printName&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Student&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__doc__&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;printName&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    학생 이름을 출력하는 함수
+
+
+    학생 정보를 저장하기 위한 클래스
+    name &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; 학생 이름
+    printName&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; 학생 이름 출력 함수&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이를 잘 사용하면 함수를 사용할 때, 다시 함수를 찾아 확인하는 수고를 줄일 수 있고, 다른 사람의 코드를 사용할 때 편리해 협업에 효과적이다.&lt;/p&gt;
+&lt;br&gt;
 &lt;h3 id=&quot;--캡슐화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%EC%BA%A1%EC%8A%90%ED%99%94&quot; aria-label=&quot;  캡슐화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 캡슐화&lt;/h3&gt;
 &lt;p&gt;클래스를 사용하면서, 클래스 속성에 함부로 접근하지 못하도록 하고 싶을 수 있다. 단순히 [인스턴스 명].[속성명] 으로 쉽게 접근하면, 예상치 못하게 속성값이 변할 수 있기 때문이다. 따라서 이를 방지하기 위해 캡슐화를 하여 클래스를 만든다.
 Java와 C++에서는 private이라는 키워드를 통해서 접근 제한이 가능하지만, 파이썬은 제공하지 않는다. 따라서 변수 이름에 표시를 해, private 변수라는 것을 확인할 수 있도록 한다. 아래 예제를 통해 확인해보자.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; age&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name
-        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; age
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; age
 
     &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;get_name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__name
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_name
 
     &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;get_age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__age
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_age
 
     &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;set_age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; age&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; age &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-            self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; age
+            self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; age
 
 minsoo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Person&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;MinSoo&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;minsoo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get_name&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -117,8 +600,7 @@ minsoo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;set_age&lt;s
 &lt;span class=&quot;token number&quot;&gt;18&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위 예제를 보면, 멤버변수에 &lt;strong&gt;&lt;em&gt;__&lt;/em&gt;&lt;/strong&gt; 혹은 &lt;strong&gt;&lt;em&gt;_&lt;/em&gt;&lt;/strong&gt; 로 시작하도록 하여 멤버 변수를 보호한다.
 이처럼, get&lt;em&gt;name(), get&lt;/em&gt;age(), set_age()와 같은 멤버 함수만을 통하여 멤버변수로 접근할 수 있도록 한다.
-물론 &apos;minsoo.__age&apos;를 통해 접근할 수 있지만, 프로그래머들 사이에 약속을 한다면 private 변수와 같은 효과를 볼 수 있다.
-또한 요즘 개발 환경에서는 __ 혹은 _ 로 시작하는 멤버 변수에 접근하지 못하도록 하기도 한다.  &lt;/p&gt;
+물론 &apos;minsoo.__age&apos;를 통해 접근할 수 있지만, 프로그래머들 사이에 약속을 한다면 private 변수와 같은 효과를 볼 수 있다.&lt;/p&gt;
 &lt;br&gt;
 &lt;h3 id=&quot;--특수-메소드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#--%ED%8A%B9%EC%88%98-%EB%A9%94%EC%86%8C%EB%93%9C&quot; aria-label=&quot;  특수 메소드 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;- 특수 메소드&lt;/h3&gt;
 &lt;p&gt;클래스를 만들어 사용하다보면, 인스턴스를 위한 연산, 혹은 함수를 사용하고 싶을 수 있다. 아래 예제를 통해 먼저 살펴보자.&lt;/p&gt;
@@ -397,7 +879,7 @@ my_generator &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; create_
 &lt;p&gt;위와 같이, 제너레이터를 한번 실행하면, 다음번에는 아무것도 반환하지 않기 때문에 주의해야 한다.&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&quot;끝맺음&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%81%9D%EB%A7%BA%EC%9D%8C&quot; aria-label=&quot;끝맺음 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;끝맺음&lt;/h2&gt;
-&lt;p&gt;여기까지가 파이썬의 기초이다. 다음 포스트에서는 파이썬 심화에 대해 글을 쓸 예정이다. 파이썬의 내부 구조에 대해 관심이 있으면 참고하길 바란다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[파이썬 기초 1]]></title><description><![CDATA[파이썬을 다시 공부하다 알게된 점 필자는 파이썬으로 개발을 하면서 파이썬 기본서를 본 적이 없다. 다른 언어를 하면서 익힌 내용들을 바탕으로 구글링을 통해 개발을 하였다.
+&lt;p&gt;여기까지가 파이썬의 기초이다. 파이썬에 대해 가물가물한 사람들은 한번 보면 도움이 될 것이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[파이썬 기초 1]]></title><description><![CDATA[파이썬을 다시 공부하다 알게된 점 필자는 파이썬으로 개발을 하면서 파이썬 기본서를 본 적이 없다. 다른 언어를 하면서 익힌 내용들을 바탕으로 구글링을 통해 개발을 하였다.
 그래서 이번에 파이썬 개발서를 한번 훑다가 몰랐던 기능들 혹은 정리하고 싶은 …]]></description><link>https://annakky.github.io/python-basic_1/</link><guid isPermaLink="false">https://annakky.github.io/python-basic_1/</guid><pubDate>Mon, 23 Nov 2020 11:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;파이썬을-다시-공부하다-알게된-점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%84-%EB%8B%A4%EC%8B%9C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%8B%A4-%EC%95%8C%EA%B2%8C%EB%90%9C-%EC%A0%90&quot; aria-label=&quot;파이썬을 다시 공부하다 알게된 점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;파이썬을 다시 공부하다 알게된 점&lt;/h2&gt;
 &lt;p&gt;필자는 파이썬으로 개발을 하면서 파이썬 기본서를 본 적이 없다. 다른 언어를 하면서 익힌 내용들을 바탕으로 구글링을 통해 개발을 하였다.
 그래서 이번에 파이썬 개발서를 한번 훑다가 몰랐던 기능들 혹은 정리하고 싶은 내용들을 정리하려고 한다. &apos;파이썬 기초&apos; 를 포스트 하면서 &lt;strong&gt;&lt;em&gt;으뜸 파이썬(박동규, 강영민 지음)&lt;/em&gt;&lt;/strong&gt; 책을 참고하였다. 자세한 내용은 책을 참고하면 좋을 것 같다.
