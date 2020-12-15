@@ -124,6 +124,82 @@ Person(name = MinSoo, age = 18)
 
 <br>
 
+### - 문서화 메소드
+
+파이썬에서 함수의 사용법과 같은, 함수에 대한 정보를 얻기 위해 help 함수를 종종 사용한다.
+이는 기존 내장 클래스, 함수에만 적용되는 것이 아닌, 사용자가 생성한 클래스에서도 가능하다.  
+
+<br>
+
+파이썬은 모듈, 함수, 클래스를 정의할 때, 기능에 관한 설명을 문자열로 작성하면 이를 **\__doc__** 속성에 자동으로 할당한다.
+이를 잘 활용하면, 협업에 큰 도움이 될 것이다. 아래 예시를 통해 문서화된 정보를 조회하는 방법을 살펴보자.
+
+```python
+class Student:
+    """
+    학생 정보를 저장하기 위한 클래스
+    name : 학생 이름
+    printName() : 학생 이름 출력 함수
+    """
+    def __init__(self, name):
+        self.name = name
+
+    def printName(self):
+        "학생 이름을 출력하는 함수"
+        print(self.name)
+
+
+help(Student)
+```
+
+```shell
+class Student(builtins.object)
+ |  Student(name)
+ |  
+ |  학생 정보를 저장하기 위한 클래스
+ |  name : 학생 이름
+ |  printName() : 학생 이름 출력 함수
+ |  
+ |  Methods defined here:
+ |  
+ |  __init__(self, name)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  printName(self)
+ |      학생 이름을 출력하는 함수
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+```
+<br>
+
+클래스 뿐만 아니라, 클래스 내부 함수도 help를 사용할 수 있다.
+
+```python
+help(Student.printName)
+print(Student.__doc__)
+```
+
+```shell
+printName(self)
+    학생 이름을 출력하는 함수
+
+
+    학생 정보를 저장하기 위한 클래스
+    name : 학생 이름
+    printName() : 학생 이름 출력 함수
+```
+
+이를 잘 사용하면 함수를 사용할 때, 다시 함수를 찾아 확인하는 수고를 줄일 수 있고, 다른 사람의 코드를 사용할 때 편리해 협업에 효과적이다.
+
+<br>
+
 ### - 캡슐화
 
 클래스를 사용하면서, 클래스 속성에 함부로 접근하지 못하도록 하고 싶을 수 있다. 단순히 [인스턴스 명].[속성명] 으로 쉽게 접근하면, 예상치 못하게 속성값이 변할 수 있기 때문이다. 따라서 이를 방지하기 위해 캡슐화를 하여 클래스를 만든다.
@@ -132,18 +208,18 @@ Java와 C++에서는 private이라는 키워드를 통해서 접근 제한이 �
 ```python
 class Person:
     def __init__(self, name, age):
-        self.__name = name
-        self.__age = age
+        self._name = name
+        self._age = age
 
     def get_name(self):
-        return self.__name
+        return self._name
 
     def get_age(self):
-        return self.__age
+        return self._age
 
     def set_age(self, age):
         if age > 0:
-            self.__age = age
+            self._age = age
 
 minsoo = Person('MinSoo', 18)
 print(minsoo.get_name())
@@ -158,7 +234,6 @@ MinSoo
 위 예제를 보면, 멤버변수에 ***__*** 혹은 ***_*** 로 시작하도록 하여 멤버 변수를 보호한다.
 이처럼, get_name(), get_age(), set_age()와 같은 멤버 함수만을 통하여 멤버변수로 접근할 수 있도록 한다.
 물론 'minsoo.\__age'를 통해 접근할 수 있지만, 프로그래머들 사이에 약속을 한다면 private 변수와 같은 효과를 볼 수 있다.
-또한 요즘 개발 환경에서는 __ 혹은 _ 로 시작하는 멤버 변수에 접근하지 못하도록 하기도 한다.  
 
 <br>
 
@@ -474,4 +549,4 @@ for n in my_generator:
 
 ## 끝맺음
 
-여기까지가 파이썬의 기초이다. 다음 포스트에서는 파이썬 심화에 대해 글을 쓸 예정이다. 파이썬의 내부 구조에 대해 관심이 있으면 참고하길 바란다.
+여기까지가 파이썬의 기초이다. 파이썬에 대해 가물가물한 사람들은 한번 보면 도움이 될 것이다.
